@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html, body {
+        height: 100%;
+        width:100%;
+    }
+    #main{
+        /* background-color: aqua; */
+        width: 100vw;
+        height: 100%;
+    }
+    .nav{
+        height: 70px;
+        width: 100vw;
+        /* background-color: bisque; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 6vw;
+        border-bottom: 1px solid #ccc;
+    }
+    .navlist{
+      /* background-color: lightcoral; */
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .navlist i{
+        display: none;
+    }
+
+    .content{
+        height: calc(100% - 70px);
+        width: 100%;
+        /* background-color: #ccc; */
+        display: flex;
+        position: relative;
+    }
+    .left{
+        height: 100%;
+        width: 60%;
+        /* background-color: rgb(41, 66, 227); */
+        padding: 8vh 7vw;
+    }
+    .left h2{
+       font-size: 4vw;;
+    }
+    .left h2 span{
+     color: rgb(227, 115, 34);
+    }
+    .left p{
+     font-size: 2vw;
+     padding: 2vh 0 ;
+    }
+
+    .left button{
+     margin-top: 4vh;
+     font-size: 2vw;
+     padding: 2vh;
+     color: rgb(255, 161, 47);
+     background-color: black;
+     /* border: 1px solid rgb(230, 29, 29); */
+     border-radius: 6px;
+    }
+
+    .right{
+        height: 100%;
+        width: 40%;
+        background-color: lightseagreen;
+    }
+  .right img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+
+      }
+
+
+/* media query here */
+
+    @media (max-width: 600px) {
+        .nav{
+           background-color: lightsalmon;
+           height: 60px;
+        }
+        .navlist i{
+        font-weight: 800;
+        font-size: 8vw;
+        display: block;
+       }
+       .navlist h4{
+        display: none;
+       }
+       .content{
+        flex-direction: column;
+        height: calc(100% - 60px);
+      }
+      .left,.right{
+        width: 100%;
+      }
+        .left h2{
+            font-size: 8vw;
+        }
+        .left p{
+            font-size: 5vw;;
+        }
+        .left button{
+            font-size: 6vw;
+            padding: 2vw 3vw;
+        }
+    }
+    
+</style>
+<body>
+    <div id="main">
+        <div class="nav">
+            <h1>LOGO</h1>
+            <div class="navlist">
+                <h4>Store</h4>
+                <h4>Career</h4>
+                <h4>Blog</h4>
+                <h4>About</h4>
+                <h4>Account</h4>
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left">
+                <h2>This is my personal website for responsive design With <span>600px </span>Screens.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dignissimos molestiae ducimus beatae architecto omnis repudiandae corrupti ipsum sapiente libero?</p>
+                 <button>Signup Here</button>
+            </div>
+            <div class="right">
+            <img src="https://static.vecteezy.com/system/resources/previews/023/808/611/non_2x/girl-studying-illustration-generative-ai-photo.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
